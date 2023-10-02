@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./manilla.css">
+    <link rel="stylesheet" href="rotacion.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />>
+    <title>Manilla inteligente</title>
+</head>
+<body>
+    <div class="contenido" id="contenido">
+        <div class="cara_enfrente">
+
+                <i id="recordButton1" class="bi bi-mic-filla"></i>
+
+                <img src="telefono1.png"  class="telefono3" id="tel3">
+           
+        </div>
+        <div class="cara_atras"></div>
+        <div class="cara_derecha"></div>
+        <div class="cara_izquierda"></div>
+        <div class="cara_arriba"></div>
+        <div class="cara_abajo"></div>
+        <div class="boton1" id="boton1" onclick="validacion()" ></div>
+        <div class="boton2" id="boton2" onclick="validacion2()"></div>
+
+        <div class="caor_1"></div>
+        <div class="caor_2"></div>
+
+        <div class="car_3"></div>
+        <div class="car_4"></div>
+
+        <div class="manila_po_1">
+            <div class="car_5"></div>
+            <div class="car_6"></div>
+            <div class="car_7"></div>
+            <div class="car_8"></div>
+        </div>
+
+        <div class="manila_po_2">
+            <div class="manilla_car_1"></div>
+            <div class="manilla_car_2"></div>
+            <div class="manilla_car_3"></div>
+            <div class="manilla_car_4"></div>
+           
+        </div>
+
+        <div class="manilla_po_3">
+            <div class="manilla_car_5"></div>
+            <div class="manilla_car_6"></div>
+            <div class="manilla_car_7"></div>
+            <div class="manilla_car_8"></div>
+        </div>
+
+        <div class="manilla_po_4">
+            <div class="manilla_car_9"></div>
+            <div class="manilla_car_10"></div>
+            <div class="manilla_car_11"></div>
+            <div class="manilla_car_12"></div>
+        </div>
+
+        <div class="manilla_po_5">
+            <div class="manilla_car_13"></div>
+            <div class="manilla_car_14"></div>
+            <div class="manilla_car_15"></div>
+            <div class="manilla_car_16"></div>
+        </div>
+
+        <div class="manilla_po_6">
+            <div class="manilla_car_17"></div>
+            <div class="manilla_car_18"></div>
+            <div class="manilla_car_19"></div>
+            <div class="manilla_car_20"></div>
+        </div>
+
+        <div class="manilla_po_7">
+            <div class="manilla_car_21"></div>
+            <div class="manilla_car_22"></div>
+            <div class="manilla_car_23"></div>
+            <div class="manilla_car_24"></div>
+        </div>
+
+
+        <div class="manilla_po_8">
+            <div class="manilla_car_25"></div>
+            <div class="manilla_car_26"></div>
+            <div class="manilla_car_27"></div>
+            <div class="manilla_car_28"></div>
+        </div>
+
+
+        <div class="manilla_po_9">
+            <div class="manilla_car_29"></div>
+            <div class="manilla_car_30"></div>
+            <div class="manilla_car_31"></div>
+            <div class="manilla_car_32"></div>
+        </div>
+
+        <div class="manilla_po_10">
+            <div class="manilla_car_33"></div>
+            <div class="manilla_car_34"></div>
+            <div class="manilla_car_35"></div>
+            <div class="manilla_car_36"></div>
+        </div>
+
+        <div class="manilla_po_11">
+            <div class="manilla_car_37"></div>
+            <div class="manilla_car_38"></div>
+            <div class="manilla_car_39"></div>
+            <div class="manilla_car_40"></div>
+        </div>
+
+        <div class="manilla_po_12">
+            <div class="manilla_car_41"></div>
+            <div class="manilla_car_42"></div>
+            <div class="manilla_car_43"></div>
+            <div class="manilla_car_44"></div>
+        </div>
+
+        <div class="manilla_po_13">
+            <div class="manilla_car_45"></div>
+            <div class="manilla_car_46"></div>
+            <div class="manilla_car_47"></div>
+            <div class="manilla_car_48"></div>
+        </div>
+
+        <div class="manilla_po_14">
+            <div class="manilla_car_49"></div>
+            <div class="manilla_car_50"></div>
+            <div class="manilla_car_51"></div>
+            <div class="manilla_car_52"></div>
+        </div>
+
+        <div class="manilla_po_15">
+            <div class="manilla_car_53"></div>
+            <div class="manilla_car_54"></div>
+            <div class="manilla_car_55"></div>
+            <div class="manilla_car_56"></div>
+        </div>
+
+        <div class="manilla_po_16">
+            <div class="manilla_car_57"></div>
+            <div class="manilla_car_58"></div>
+            <div class="manilla_car_59"></div>
+            <div class="manilla_car_60"></div>
+        </div>
+
+        <div class="manilla_po_17">
+            <div class="manilla_car_61"></div>
+            <div class="manilla_car_62"></div>
+            <div class="manilla_car_63"></div>
+            <div class="manilla_car_64"></div>
+        </div>
+    </div>
+    <div class="escuchar" id="escuchar">
+        <p class="escuchando">Grabar</p>
+        <i id="recordButton" class="bi bi-mic-fill"></i>
+        <p id="recordingTime">Tiempo de grabación: 00:00</p>
+        <button class="pausar" onclick="ventana_2()">
+            <p class="grab">Cancelar</p>
+        </button>
+    </div>
+    <div class="llamada" id="llamada" >
+        <div class="on">
+            <div class="son_1" id="son_1"></div>
+            <div class="son_2" id="son_2"></div>
+            <div class="son_3" id="son_3"></div>
+            <div class="tap_1"></div>
+            <div class="tap_2"></div>
+        </div>
+        <img src="telefono1.png"  class="telefono1">
+        <p class="numero">01-800-0918082</p>
+        <button  class="boton_telefono" onclick="finaalizar()">
+            <img src="telefono2.png" class="telefono2">
+        </button>
+    </div>
+    
+
+    <script src="./rot/audio.js"></script>
+    <script src="./rot/rotacion.js"></script>
+
+    
+</body>
+</html>
